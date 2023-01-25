@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    container_name: form_service_postgres_test
+    restart: always
+    ports:
+      - '5433:5432'
+    environment:
+      POSTGRES_DB: 'form_test'
+      POSTGRES_USER: 'user'
+      POSTGRES_PASSWORD: 'user'
+      PGDATA: /var/lib/postgresql/data/formtest/
+    volumes:
+      - pgdatatest:/var/lib/postgresql/data/formtest
+    networks:
+      - postgres
+
+volumes:
+  pgdatatest:
+
+networks:
+  postgres:
