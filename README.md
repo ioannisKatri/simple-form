@@ -5,7 +5,7 @@ This is a simple endpoint for creating and retrieving forms.
 
 ## Getting Started
 
-- Make sure you have `Docker` and `Node.js` installed on your machine.
+- Make sure you have [docker](https://docs.docker.com/get-docker/) and [nodejs](https://nodejs.org/en/download/) installed on your machine.
 - copy the file `.env.dist` to `.env` in the same root directory
 
 ## Setup
