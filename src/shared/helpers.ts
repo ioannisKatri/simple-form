@@ -21,3 +21,6 @@ export const getPostgresPort = (): string => getEnv('POSTGRES_PORT')
 export const getPostgresHost = (): string => getEnv('POSTGRES_HOST')
 export const getDatabaseName = (): string => getEnv('POSTGRES_NAME')
 
+export const constructEndpoint = (version: string, endpoint: string): string => {
+  return `/${version}/${endpoint}`
+}

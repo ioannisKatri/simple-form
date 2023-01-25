@@ -38,7 +38,7 @@ describe('FormRepository', () => {
     }
 
     const result = await request(app.server)
-      .post('/forms')
+      .post('/v1/forms')
       .send(obj)
     await app.close();
     expect(result.status).toEqual(200)

@@ -1,12 +1,12 @@
 import Fastify, { FastifyReply, FastifyRequest } from 'fastify'
 import dotenv from 'dotenv'
 import fastifyCors from '@fastify/cors'
-import { routes } from './routes'
 import { mapRequest, mapResponse } from './infrastructure/handler/httpMapper'
 import { Response } from './infrastructure/http/Response'
 import { getEnv } from './shared/helpers'
 import { ErrorBag } from './shared/ErrorBag'
 import { ServerError } from './shared/CustomErrors'
+import {routes} from "./routes/v1/routes";
 
 
 dotenv.config()

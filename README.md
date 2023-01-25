@@ -42,7 +42,7 @@ npm run migrations:generate
 ### Endpoints
 
 #### POST `/forms`
-Example request: `http://127.0.0.1:3000/forms/`
+Example request: `http://127.0.0.1:3000/v1/forms/`
 
 Payload 
 ```
@@ -65,4 +65,4 @@ Response
 ```
 
 #### GET `/forms/{formId}`
-Example: `http://127.0.0.1:3000/forms/FORM-2023-451516`
+Example: `http://127.0.0.1:3000/v1/forms/FORM-2023-451516`

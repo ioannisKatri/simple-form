@@ -6,7 +6,7 @@ import {
   FormRepositoryImpl,
   fromIFormToForm,
 } from '../../../../providers/postgresql/repositories/forms/form.repository'
-import { FormRepository, IForm } from '../../../../providers/postgresql/repositories/forms/form.repository.interface'
+import { FormRepository } from '../../../../providers/postgresql/repositories/forms/form.repository.interface'
 
 export type GetProfileResponseType = FormProps | string
 
@@ -23,6 +23,6 @@ export class GetFormController
     if (!form) {
       return Response.NOT_FOUND('Not Found')
     }
-    return Response.OK(fromIFormToForm(form as IForm).data)
+    return Response.OK(fromIFormToForm(form).data)
   }
 }
