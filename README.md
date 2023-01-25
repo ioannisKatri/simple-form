@@ -13,7 +13,6 @@ This is a simple endpoint for creating and retrieving forms.
 ### Local Environment setup
 ``` 
 npm run local:db
-npm run migrations:generate
 npm run migrations:run
 ```
 
@@ -24,14 +23,18 @@ npm run start:local
 
 ### Testing environment setup
 ``` 
-npm run local:db
-npm run test:migrations:generate
+npm run test:db
 npm run test:migrations:run
 ```
 
 #### Running the tests
 ``` 
 npm run test
+```
+
+### Generate a migration
+```
+npm run migrations:generate
 ```
 
 ## Usage
